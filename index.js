@@ -25,6 +25,7 @@ function viewCart() {
     if(cart.length === 1){
       content += ` ${Object.keys(cart[0])} at $${Object.values(cart[0])}.`;
     }
+    // Trenger en ekstra if for å skille mellom to og flere enheter i handlevogn...
     else {
       for(var i in cart){
         if(i < cart.length - 1){
